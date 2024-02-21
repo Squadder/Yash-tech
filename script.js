@@ -54,15 +54,15 @@ const btnRight = document.querySelector('.slider__btn-right');
 
 const sliderImages = [
   {
-      src: './images/1.jpeg',
+      src: './images/6.webp',
       text: 'Taste the magic'
   },
   {
-      src: './images/2.jpeg',
+      src: './images/4.webp',
       text: 'Taste the incredible'
   },
   {
-      src: './images/3.jpg',
+      src: './images/7.webp',
       text: 'Taste the dream'
   }
 ];

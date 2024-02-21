@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="style.css" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Paaji');
+
+    :root {
+      --primary-color: #1e90ff;
+      --secondary-color: #ffe221;
+      --tertiary-color: #050505;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Baloo Paaji', cursive;
+      /* background: var(--primary-color); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .container {
+      width: 400px;
+      height: 220px;
+      position: relative;
+      opacity: 0; /* Initially set opacity to 0 */
+      transform: translateY(50px); /* Move the container down */
+      transition: opacity 1s, transform 1s; /* Add transition effect */
+    }
+
+    h1, h2 {
+      font-size: 75px;
+      text-transform: uppercase;
+    }
+
+    h1 span, h2 span {
+      width: 100%;
+      float: left;
+      color: var(--tertiary-color);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    h1 span {
+      animation: titleAnimation 3s ease infinite; /* Make the animation infinite */
+    }
+
+    h1 span:first-child {
+      animation-delay: 0.6s;
+    }
+
+    h1 span:last-child {
+      color: var(--secondary-color);
+      animation-delay: 0.5s;
+    }
+
+    h2 {
+      top: 0;
+      position: absolute;
+    }
+
+    h2 span {
+      animation: titleAnimation 3s ease 4.1s infinite;
+    }
+
+    h2 span:first-child {
+      animation-delay: 4.2s;
+    }
+
+    h2 span:last-child {
+      color: var(--secondary-color);
+      animation-delay: 4s;
+    }
+
+    .usechrome {
+      font-size: 10px;
+      color: #fff;
+      font-family: helvetica, arial;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      left: 0;
+    }
+
+    @keyframes titleAnimation {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+      }
+      20% {
+        transform: translateY(0);
+        opacity: 1;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      }
+      80% {
+        transform: translateY(0);
+        opacity: 1;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      }
+      100% {
+        transform: translateY(50px);
+        opacity: 0;
+        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container" id="scroll-animation">
+    <h1 class="title">
+      <span>Hello Coders !</span>
+      <span></span>
+      <span>Welcome Back </span>
+    </h1>
+  </section>
+
+  <script>
+    document.addEventListener("scroll", function () {
+      var container = document.getElementById("scroll-animation");
+      var bounding = container.getBoundingClientRect();
+
+      if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+        container.style.opacity = "1";
+        container.style.transform = "translateY(0)";
+      }
+    });
+  </script>
+</body>
+</html>

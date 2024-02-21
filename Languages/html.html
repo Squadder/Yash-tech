@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+    <link
+       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+       rel="stylesheet"
+     />
+
+     <link rel="stylesheet" href="cources.css">
+
+     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1101019f;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-start; /* Start from the left */
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            margin-top: 70px;
+            z-index: 1;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0; /* Remove default margin on ul */
+            padding: 0; /* Remove default padding on ul */
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+        /* edit sidebar  */
+
+        body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    #sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #87CEEB; /* Sky Blue */
+      color: #fff;
+      position: fixed;
+      right: -250px; /* Initial position off-screen */
+      overflow-y: auto;
+      transition: right 0.3s;
+      top: 140px;
+      margin: 0px;
+    }
+
+    #content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    #open-sidebar-btn {
+      display: none;
+      position: fixed;
+      top: 146px;
+      right: 20px;
+      background-color: #87CEEB; /* Sky Blue */
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    #close-sidebar-btn {
+      position: fixed;
+      top: 146px;
+      right: 10px;
+      background-color: #87CEEB; /* Sky Blue */
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      display: none;
+    }
+
+    #sidebar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      transition: background-color 0.3s;
+      margin-top: 40px;
+    }
+
+    #sidebar a:hover {
+      background-color: #5e8cd3; /* Darker Blue on hover */
+    }
+
+    @media (max-width: 768px) {
+  #sidebar {
+    right: -250px;
+  }
+
+  #open-sidebar-btn {
+    display: block;
+  }
+
+  #close-sidebar-btn {
+    display: block;
+  }
+}
+
+/* Additional styles for screens larger than 768px */
+@media (min-width: 769px) {
+  #sidebar {
+    right: 0;
+  }
+
+  #open-sidebar-btn {
+    display: none;
+  }
+
+  #close-sidebar-btn {
+    display: none;
+  }
+}
+     </style>
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+ <nav>
+    <div class="nav-bar">
+      <!-- Sidebar toggle icon -->
+      <i class="bx bx-menu sidebarOpen"></i>
+      <!-- Logo -->
+      <span class="logo navLogo"><a href="#">Yash tech</a></span>
+
+      <!-- Sidebar Menu -->
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">Yash tech</a></span>
+          <!-- Sidebar close icon -->
+          <i class="bx bx-x siderbarClose"></i>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../About.html">About</a></li>
+          <li><a href="../Cources.html">Cources</a></li>
+          <li><a href="../Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Dark/Light mode and Search Box -->
+      <div class="darkLight-searchBox">
+        <!-- Dark/Light mode toggle -->
+        <div class="dark-light">
+          <i class="bx bx-moon moon"></i>
+          <i class="bx bx-sun sun"></i>
+        </div>
+
+        <!-- Search Box -->
+        <div class="searchBox">
+          <div class="searchToggle">
+            <!-- Cancel and Search icons for search toggle -->
+            <i class="bx bx-x cancel"></i>
+            <i class="bx bx-search search"></i>
+          </div>
+
+          <!-- Search input field -->
+          <div class="search-field">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- languages navbar  -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="html.html">HTML</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="css.html">CSS</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="javascript.html">Javascript</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="python.html">Python</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="php.html">php</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="react.html">React</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="bootstrap.html">Bootstrap</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="java.html">Java</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- edit sidebar  -->
+    <div class="container">
+        <div id="sidebar">
+          <!-- Close button for small devices -->
+          <button id="close-sidebar-btn" onclick="closeSidebar()">Close</button>
+          
+          <!-- Sidebar content -->
+          <a href="#">Item 1</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a>
+          <!-- Add more sidebar content as needed -->
+        </div>
+    
+        <div id="content">
+          <!-- Main content -->
+          <h2>HTML Content</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <!-- Add more main content as needed -->
+        </div>
+    
+        <button id="open-sidebar-btn" onclick="openSidebar()">Open Sidebar</button>
+      </div>
+
+      <!-- edit sidebar js  -->
+      <script>
+        function openSidebar() {
+          const sidebar = document.getElementById('sidebar');
+          sidebar.style.right = '0';
+          document.getElementById('open-sidebar-btn').style.display = 'none';
+          document.getElementById('close-sidebar-btn').style.display = 'block';
+        }
+    
+        function closeSidebar() {
+          const sidebar = document.getElementById('sidebar');
+          sidebar.style.right = '-250px';
+          document.getElementById('open-sidebar-btn').style.display = 'block';
+          document.getElementById('close-sidebar-btn').style.display = 'none';
+        }
+      </script>
+      <!-- JavaScript file -->
+      <script src="cources.js"></script>
+</body>
+</html>

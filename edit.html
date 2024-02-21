@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+ @keyframes niceAnimation {
+  0% {
+    transform: rotate(0deg);
+    color: #3498db; /* Start with a blue color */
+  }
+  50% {
+    transform: rotate(180deg);
+    color: #e74c3c; /* Transition to a red color */
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #2ecc71; /* End with a green color */
+  }
+}
+
+.nice-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+  animation: niceAnimation 3s linear infinite;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <section class="container nice-animation">
+    <h1 class="title">
+      <span>Welcome </span>
+      <span>Back !</span>
+    </h1>
+  </section>
+  
+  
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+       rel="stylesheet"
+     />
+
+     <link rel="stylesheet" href="./Languages/cources.css">
+
+     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1101019f;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-start; /* Start from the left */
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            margin-top: 70px;
+            z-index: 1;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0; /* Remove default margin on ul */
+            padding: 0; /* Remove default padding on ul */
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+
+       
+     </style>
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+ <nav>
+    <div class="nav-bar">
+      <!-- Sidebar toggle icon -->
+      <i class="bx bx-menu sidebarOpen"></i>
+      <!-- Logo -->
+      <span class="logo navLogo"><a href="#">Yash tech</a></span>
+
+      <!-- Sidebar Menu -->
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">Yash tech</a></span>
+          <!-- Sidebar close icon -->
+          <i class="bx bx-x siderbarClose"></i>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Cources.html">Cources</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Dark/Light mode and Search Box -->
+      <div class="darkLight-searchBox">
+        <!-- Dark/Light mode toggle -->
+        <div class="dark-light">
+          <i class="bx bx-moon moon"></i>
+          <i class="bx bx-sun sun"></i>
+        </div>
+
+        <!-- Search Box -->
+        <div class="searchBox">
+          <div class="searchToggle">
+            <!-- Cancel and Search icons for search toggle -->
+            <i class="bx bx-x cancel"></i>
+            <i class="bx bx-search search"></i>
+          </div>
+
+          <!-- Search input field -->
+          <div class="search-field">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- languages navbar  -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="./Languages/html.html">HTML</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/css.html">CSS</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/javascript.html">Javascript</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/python.html">Python</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/php.html">php</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/react.html">React</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/bootstrap.html">Bootstrap</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+                <li class="dropdown">
+                    <a href="./Languages/java.html">Java</a>
+                </li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    
+
+     
+      <!-- JavaScript file -->
+      <script src="./Languages/cources.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome library  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha384-yfN/L6Fia87n6lHlyOtnq+Lk9tqO5r/4eAMq2Lg6YRDL/RP7RNXPa5C5l8Uq3Ube"
+      crossorigin="anonymous"
+    />
+
+    <!-- Page title -->
+    <title>Home </title>
+
+    <!-- slider css  -->
+
+    <style>
+        body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cd__main {
+    display: block !important;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+/* TEXT ANIMATION  */
+
+@keyframes gradientAnimation {
+  0% {
+    transform: translateY(-0%);
+    opacity: 0;
+    background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff); /* Start with a gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff); /* Transition through the same gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ffff); /* End with a different gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.gradient-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+  animation: gradientAnimation 3s ease-in-out;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-bar">
+        <!-- Sidebar toggle icon -->
+        <i class="bx bx-menu sidebarOpen"></i>
+        <!-- Logo -->
+        <span class="logo navLogo"><a href="#">Yash tech</a></span>
+
+        <!-- Sidebar Menu -->
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#">Yash tech</a></span>
+            <!-- Sidebar close icon -->
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Cources.html">Cources</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Dark/Light mode and Search Box -->
+        <div class="darkLight-searchBox">
+          <!-- Dark/Light mode toggle -->
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <!-- Search Box -->
+          <div class="searchBox">
+            <div class="searchToggle">
+              <!-- Cancel and Search icons for search toggle -->
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+
+            <!-- Search input field -->
+            <div class="search-field">
+              <input type="text" placeholder="Search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!-- image slider  -->
+  
+<main>
+  <div class="slider">
+    <div class="slider--content">
+      <button class="slider__btn-left">
+        <i class="fas fa-angle-left"></i>
+      </button>
+        <div class="slider--feature">
+          <h1 class="slider--title">Learn the coding </h1>
+          <p class="slider--text">
+            <div id="text-container" class="text-animation"></div>
+          </p>
+          <a href="Cources.html">
+            <button class="slider--btn">Get started</button>
+          </a>
+        </div>
+      <button class="slider__btn-right">
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
+</main>
+
+<!-- TEXT ANIMATION  -->
+<div style="margin-top: -150px;">
+<section class="container gradient-animation">
+  <h1 class="title">
+    <span>Welcome </span>
+    <span>Back !</span>
+  </h1>
+</section>
+</div>
+ <!-- videos  -->
+ <div style="margin-top: -150px;">
+
+ <div class="video-container">
+  <!-- Video 1 (Visible on all screens) -->
+  <div class="video-item">
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Video 2 (Visible on all screens) -->
+  <div class="video-item">
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+   <!-- Video 2 (Visible on all screens) -->
+   <div class="video-item">
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+   <!-- Video 2 (Visible on all screens) -->
+   <div class="video-item">
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Video 3 (Visible only on large screens) -->
+  <div class="video-item hide-on-small-screens">
+    <video controls>
+      <source src="video3_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Video 4 (Visible only on large screens) -->
+  <div class="video-item hide-on-small-screens">
+    <video controls>
+      <source src="video4_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Video 4 (Visible only on large screens) -->
+  <div class="video-item hide-on-small-screens">
+    <video controls>
+      <source src="video4_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Video 4 (Visible only on large screens) -->
+  <div class="video-item hide-on-small-screens">
+    <video controls>
+      <source src="video4_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+</div>
+ <!-- JavaScript file -->
+ <script src="script.js"></script>
+  </body>
+</html>
